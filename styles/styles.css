@@ -5,7 +5,6 @@
 body {
     font-family: 'Gothic A1', sans-serif;
     align-items: center;
-    /* min-height: 100vh; */
     margin: 0 auto;
     padding: 0;
     width: 1200px;
@@ -15,16 +14,19 @@ body {
 
 /* Navigation bar */
 nav {
+    display: flex;
     top: 0;
     position: sticky;
     position: -webkit-sticky;
+    width: 100%;
 }
 
-.container {
+.container-left {
     margin: 0;
     padding: 0;
     display: flex;
-    width: 100%;
+    flex-grow: 1;
+    width: 33.3%;
     height: 42px;
     background-color: #005cb9;
     text-align: left;
@@ -63,6 +65,41 @@ li:active {
     text-shadow: 0px 1px 3px rgba(155, 39, 87, 0.664);
 }
 
+.container-center {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-grow: 1;
+    width: 33.3%;
+    height: 42px;
+    background-color: #005cb9;
+    text-align: center;
+    align-items: center;
+    color:  white; 
+}
+
+h1 {
+    margin: auto;
+    
+    letter-spacing: 2px;
+    font-weight: 800;
+    font-size: 45px;
+    color: white;
+}
+
+.container-right {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-grow: 1;
+    width: 33.3%;
+    height: 42px;
+    background-color: #005cb9;
+    text-align: center;
+    align-items: center;
+    color:  white; 
+}
+
 button {
     height: 20px;
     width: 20px;
@@ -73,8 +110,6 @@ button {
     z-index: 2;
     color: white;
     transition: 0.25s all ease;
-
-    
 }
 
 button.right {
@@ -109,15 +144,7 @@ button:hover::before {
     transition: 0.3s left ease-in-out, 0.3s opacity ease-in-out 0.1s;
 }
 
-h1 {
-    align-items: center;
-    margin: auto;
-    text-align: center;
-    letter-spacing: 2px;
-    font-weight: 800;
-    font-size: 45px;
-    color: white;
-}
+
 
 
 header {
@@ -128,8 +155,6 @@ header {
 }
 
 h2 {
-    /* margin-top: 0px;
-    margin-bottom: 10px; */
     color: #005cb9;
     font-weight: 400;
     font-size: 17px;
