@@ -144,14 +144,11 @@ button:hover::before {
     transition: 0.3s left ease-in-out, 0.3s opacity ease-in-out 0.1s;
 }
 
-
-
-
 header {
     display: flex;
     flex-direction: column;
+    margin: auto;
     align-items: center;
-    justify-content: space-between;
 }
 
 h2 {
@@ -160,13 +157,13 @@ h2 {
     font-size: 17px;
 }
 
-
 .mission_background {
     background-image: url(../images/Top.jpg);
     background-size: cover;
     margin: auto;
     height: 500px;
     max-width: 900px;
+    animation: intro 2s ease-in-out .25s 1 normal forwards;
 }
 
 /* .image {
@@ -188,8 +185,24 @@ h3 {
     font-size: 40px;
     color: white;
     opacity: 0.7;
-
 }
+
+@keyframes intro {
+    0% {
+        display: hidden;
+        height: 1px;
+        width: 1px;
+        transform: translateX(50%);
+        transform: translateY(50%);
+    }
+    25% {
+        width: 900px;
+    }
+
+}   
+
+
+
 
 .challenge_background {
     /* background-size: cover; */
@@ -200,3 +213,4 @@ h3 {
     height: 500px;
     max-width: 900px;   
 }
+
