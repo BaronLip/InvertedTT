@@ -10,7 +10,7 @@ html, body {
   padding: 0;
   max-width: 1200px;
   background-color: white;
-  overflow-x: hidden;
+  /* overflow-x: hidden;  */ /*This needs to be off in order for "sticky" to function.*/
 }
 
 /* Navigation bar */
@@ -19,7 +19,6 @@ html, body {
   position: sticky;
   position: -webkit-sticky;
   width: 100%;
-  
 }
 
 .container {
@@ -191,7 +190,7 @@ article {
   max-width: 90rem;
   animation: intro 2s ease-in-out 0.25s 1 normal forwards;
   position: relative;
-  /* animation-fill-mode: backwards; */
+  animation-fill-mode: backwards; 
 }
 
 .statements,
