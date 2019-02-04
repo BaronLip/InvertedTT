@@ -303,7 +303,7 @@ footer h4 {
   color: white;
 }
 
-@media (max-width: 80rem) {
+/* @media (max-width: 80rem) {
   .wrapper .navigation .container {
     float: none;
   }
@@ -319,7 +319,7 @@ footer h4 {
   ul li:hover .menu {
     display: block;
   }
-}
+} */
 
 /* .challenge_background {
     background-size: cover;
