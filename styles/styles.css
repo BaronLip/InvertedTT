@@ -8,7 +8,7 @@ html, body {
   align-items: center;
   margin: 0 auto;
   padding: 0;
-  max-width: 1200px;
+  max-width: 100rem;
   background-color: white;
   /* overflow-x: hidden;  */ /*This needs to be off in order for "sticky" to function.*/
 }
@@ -18,11 +18,11 @@ html, body {
   top: 0;
   position: sticky;
   position: -webkit-sticky;
-  width: 100%;
 }
 
 .container {
-  max-width: 120rem;
+  width: 100%;
+  max-width: 100rem;
   display: flex;
   height: 4.5rem;
   background-color: #005cb9;
@@ -119,11 +119,6 @@ button {
   transition: 0.25s all ease;
 }
 
-/* button.right {
-  margin-left: auto;
-  margin-right: 25px;
-} */
-
 button:hover {
   box-shadow: 0rem 0rem 2rem -.5rem white;
   transform: scale(1.1);
@@ -154,6 +149,9 @@ button:hover::before {
   transition: 0.3s left ease-in-out, 0.3s opacity ease-in-out 0.1s;
 }
 
+/* End Naviagtion Bar */
+/* Header Begin */
+
 header {
   display: flex;
   flex-direction: column;
@@ -178,16 +176,19 @@ h2 {
   color:#005cb9;
 }
 
-article {
-  margin-bottom: 10rem;
+/* Header End */
+/* Main Begin */
+
+main {
+  /* margin-bottom: 10rem; */
 }
 
 .mission_background {
   background-image: url(../images/Top.jpg);
   background-size: cover;
   margin: auto;
-  height: 50rem;
-  max-width: 90rem;
+  height: 44.4rem;
+  max-width: 90%;
   animation: intro 2s ease-in-out 0.25s 1 normal forwards;
   position: relative;
   animation-fill-mode: backwards; 
@@ -212,14 +213,11 @@ article {
 .mission_statement .statement-overlay {
   background-image: url(../images/Top.jpg);
   background-size: cover;
-  /* background-color: blue; */
 }
 
 .challenge_statement .statement-overlay {
   background-image: url(../images/challenge_harimoto.jpg);
   background-size: fill;
-
-  /* background-color: red; */
 }
 
 .events_statement .statement-overlay {
@@ -283,24 +281,32 @@ h3 {
   }
 }
 
+/* Main End */
+/* Footer Begin */
+
 footer {
   display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
   position: fixed;
   bottom: 0;
-  max-width: 120rem;
-  min-width: 40rem;
-  height: 10rem;
+  width: 100%;
+  max-width: 100rem;
+  height: 4.5rem;
   background-color: #005cb9;
 }
 
 footer h4 {
-  margin: auto;
-  padding: 2.5rem 15rem;
   font-weight: 300;
   font-size: 1.2rem;
   line-height: 1.5;
   color: white;
+  text-align: center;
 }
+
+/* Footer End */
+
 
 /* @media (max-width: 80rem) {
   .wrapper .navigation .container {
