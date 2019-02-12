@@ -153,28 +153,47 @@ button:hover::before {
 /* Header Begin */
 
 header {
+  /* display: flex;
+  width: 100%; */
+  /* flex-direction: column; */
+  /* margin: auto;
+  justify-content: center;
+  align-items: center; */
+}
+
+.h1_container {
+  width: 100%;
+  height: 7rem;
   display: flex;
-  flex-direction: column;
-  margin: auto;
-  align-items: center;
+  align-content: center;
+  justify-content: center;
 }
 
-h1 {
+    h1 {
+      letter-spacing: .2rem;
+      font-weight: 800;
+      font-size: 4.5rem;
+      color:#005cb9;
+      margin-top: 1.9rem;
+      margin-bottom: .5rem;
+    }
+
+.h2_container {
+  width: 100%;
+  height: 3.5rem;
+  display: flex;
   margin: auto;
-  margin-top: 2.5rem;
-  letter-spacing: .2rem;
-  font-weight: 800;
-  font-size: 4.5rem;
-  color:#005cb9;
+  align-content: center;
+  justify-content: center;
 }
 
-h2 {
-  margin: auto;
-  margin-bottom: 2.5rem;
-  font-weight: 400;
-  font-size: 1.7rem;
-  color:#005cb9;
-}
+    h2 {
+      font-weight: 400;
+      font-size: 1.7rem;
+      color:#005cb9;
+      margin-top: 0rem;
+      margin-bottom: 1rem;
+    }
 
 /* Header End */
 /* Main Begin */
