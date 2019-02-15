@@ -152,14 +152,6 @@ button:hover::before {
 /* End Naviagtion Bar */
 /* Header Begin */
 
-header {
-  /* display: flex;
-  width: 100%; */
-  /* flex-direction: column; */
-  /* margin: auto;
-  justify-content: center;
-  align-items: center; */
-}
 
 .h1_container {
   width: 100%;
@@ -198,9 +190,8 @@ header {
 /* Header End */
 /* Main Begin */
 
-main {
-  /* margin-bottom: 10rem; */
-}
+/* main {
+} */
 
 .mission_background {
   background-image: url(../images/Top.jpg);
